@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/ivWifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:src="@drawable/wifi" />
+
+    <TextView
+        android:id="@+id/tvSsid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ivWifi"
+        android:paddingLeft="8dp"
+        android:textColor="@color/primary_text"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvPasswd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSsid"
+        android:layout_toRightOf="@id/ivWifi"
+        android:paddingLeft="8dp"
+        android:textColor="@color/secondary_text"
+        android:textSize="15sp" />
+
+</RelativeLayout>
